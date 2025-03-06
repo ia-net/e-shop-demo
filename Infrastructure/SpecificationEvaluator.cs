@@ -32,8 +32,15 @@ namespace Infrastructure
                 query = query.Distinct();
             }
 
+            if (spec.IsPaginEnabled)
+            {
+                query = query.Skip(spec.Skip).Take(spec.Take);
+            }
+
             return query;
         }
+
+
 
         public static IQueryable<TResult> GetQuery<TSpec, TResult>(IQueryable<T> query, ISpecification<T, TResult> spec)
         {
@@ -52,6 +59,7 @@ namespace Infrastructure
                 query = query.OrderByDescending(spec.OrderByDecending);
             }
 
+
             var selectQuery = query as IQueryable<TResult>;
 
             if (spec.Select is not null)
@@ -62,6 +70,11 @@ namespace Infrastructure
             if (spec.IsDistinst)
             {
                 selectQuery = selectQuery?.Distinct();
+            }
+
+            if (spec.IsDistinst)
+            {
+                selectQuery = selectQuery?.Skip(spec.Skip).Take(spec.Take);
             }
 
             return selectQuery ?? query.Cast<TResult>();

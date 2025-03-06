@@ -17,6 +17,21 @@ namespace Core.Specifications
 
         public bool IsDistinst { get; private set; }
 
+        public int Take { get; private set; }
+
+        public int Skip { get; private set; }
+
+        public bool IsPaginEnabled { get; private set; }
+
+        public IQueryable<T> ApplyCriteria(IQueryable<T> query)
+        {
+            if (Criteria is not null)
+            {
+                query = query.Where(Criteria);
+            }
+
+            return query;
+        }
 
         protected void AddOrderBy(Expression<Func<T, object>> orderByExpression)
         {
@@ -32,6 +47,14 @@ namespace Core.Specifications
         {
             IsDistinst = true;
         }
+
+        protected void ApplyPaging(int skip, int take)
+        {
+            Skip = skip;
+            Take = take;
+            IsPaginEnabled = true;
+        }
+
     }
 
     public class BaseSpecification<T, TResult>(Expression<Func<T, bool>>? criteria)
