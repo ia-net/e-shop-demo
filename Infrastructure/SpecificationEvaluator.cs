@@ -72,7 +72,7 @@ namespace Infrastructure
                 selectQuery = selectQuery?.Distinct();
             }
 
-            if (spec.IsDistinst)
+            if (spec.IsPaginEnabled)
             {
                 selectQuery = selectQuery?.Skip(spec.Skip).Take(spec.Take);
             }
