@@ -7,7 +7,7 @@
 - **데이터베이스**: SQL Server (EF Core 사용), Redis
 - **인증 방식**: JWT, Cookies
 - **개발 환경**: Ubuntu 20.04, Jetbrains Rider, Visual Studio 2022
-- **기타 사용 기술**: Specification Pattern, Stripe
+- **기타 사용 기술**: Specification Pattern, Stripe, Docker
 
 ## ✨ 주요 기능
 
