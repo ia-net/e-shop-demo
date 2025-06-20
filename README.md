@@ -3,10 +3,9 @@
 ## 🛠 기술 스택
 
 - **백엔드**: ASP.NET Core Web API (Onion Architecture)
-- **프론트엔드**: Angular17
+- **프론트엔드**: Angular17, Tailwind CSS, Angular Material
 - **데이터베이스**: SQL Server (EF Core 사용), Redis
-- **인증 방식**: JWT 
-- **스타일링**: Tailwind CSS, Angular Material
+- **인증 방식**: JWT, Cookies
 - **개발 환경**: Jetbrains Rider, Visual Studio 2022
 - **기타 사용 기술**: Specification Pattern, Stripe
 
