@@ -1,17 +1,16 @@
-# .NET Core & Angular 기반 이커머스 웹 애플리케이션
-
-이 repository는 [Udemy 강의](https://www.udemy.com/course/learn-to-build-an-e-commerce-app-with-net-core-and-angular/)를 기반으로 개발된 학습용 프로젝트임을 미리 알리며, 일부 기능은 미완성 상태이거나 예제 수준으로 구성되어 있을 수 있습니다. 자세한 설명과 단계별 구현은 원본 강의를 참고해주세요.
+# .NET & Angular 기반 이커머스 웹 애플리케이션
 
 ---
 
 ## 🛠 기술 스택
 
 - **백엔드**: ASP.NET Core Web API (Onion Architecture)
-- **프론트엔드**: Angular  
-- **데이터베이스**: SQL Server (EF Core 사용)
+- **프론트엔드**: Angular17
+- **데이터베이스**: SQL Server (EF Core 사용), Redis
 - **인증 방식**: JWT 
-- **스타일링**: Tailwind CSS, Angular Material  
-- **기타 사용 기술**: Specification 패턴
+- **스타일링**: Tailwind CSS, Angular Material
+- **개발 환경**: Jetbrains Rider, Visual Studio 2022
+- **기타 사용 기술**: Specification Pattern(Stripe)
 
 ## ✨ 주요 기능
 
@@ -25,6 +24,7 @@
 
 ### 필수 설치
 - [.NET SDK](https://dotnet.microsoft.com/ko-kr/download)
+- [NVM](https://github.com/coreybutler/nvm-windows)
 - [Node.js 및 npm](https://nodejs.org/)
 - [Angular CLI](https://angular.io/cli)
 - [Docker Desktop](https://www.docker.com/products/docker-desktop/)
