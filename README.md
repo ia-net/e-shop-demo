@@ -1,7 +1,5 @@
 # .NET & Angular 기반 이커머스 웹 애플리케이션
 
----
-
 ## 🛠 기술 스택
 
 - **백엔드**: ASP.NET Core Web API (Onion Architecture)
