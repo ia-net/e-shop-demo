@@ -8,7 +8,7 @@
 - **인증 방식**: JWT 
 - **스타일링**: Tailwind CSS, Angular Material
 - **개발 환경**: Jetbrains Rider, Visual Studio 2022
-- **기타 사용 기술**: Specification Pattern(Stripe)
+- **기타 사용 기술**: Specification Pattern, Stripe
 
 ## ✨ 주요 기능
 
