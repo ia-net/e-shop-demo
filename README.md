@@ -1,5 +1,7 @@
 ## .NET & Angular 기반 이커머스 웹 애플리케이션
 
+Angular, ASP.NET, SQL Server를 활용한 이커머스 데모 애플리케이션입니다.
+
 ### 🛠 기술 스택
 
 - .NET Core API 
